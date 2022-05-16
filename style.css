@@ -1,0 +1,140 @@
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;700&display=swap');
+     :root {
+        --red: red;
+        --black: #130f40;
+        --light-color: #666;
+        --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        --border: 1rem solid rgba(0, 0, 0, .1);
+        --outline: .1rem solid rgba(0, 0, 0, .1);
+        --outline-hover: .1rem solid var(--black)
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Nunito', sans-serif;
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+    
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 7rem;
+    }
+    
+    body {
+        background: black;
+        height: 2000px;
+    }
+    
+    .section {
+        padding: 2rem 9%;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 9%;
+        background: rgb(59, 193, 255);
+        box-shadow: var(--box-shadow);
+    }
+    
+    .header img {
+        width: 10%;
+        height: 40%;
+        border: none;
+    }
+    
+    .header img:hover {
+        transform: scale(1.5);
+    }
+    
+    .header .navbar a {
+        font-size: 2.2rem;
+        margin: 1rem;
+        color: var(--black);
+    }
+    
+    .header .navbar a:hover {
+        background: rgb(52, 130, 194);
+        border-radius: .4rem;
+        color: #eee;
+    }
+    
+    .header .icons div {
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+        font-size: 15px;
+        border-radius: .5rem;
+        background: rgb(55, 162, 250);
+        text-align: center;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+    
+    .header .icons div:hover {
+        background: rgb(98, 184, 255);
+        transform: rotate(360deg);
+        transition: 1.5s;
+    }
+    
+    .btn {
+        margin: 1rem 2rem;
+        display: inline-block;
+        padding: .7rem 3rem;
+        font-size: 1.7rem;
+        color: #fff;
+        background: var(--red);
+        cursor: pointer;
+        border-radius: .5rem;
+        font-weight: bold;
+    }
+    
+    .btn:hover {
+        background: rgb(83, 26, 26);
+        letter-spacing: .2rem;
+    }
+    
+    .home {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        background: url(img/dr.stone.jpg) no-repeat;
+        margin: 60px 50px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .home .content {
+        max-width: 60rem;
+    }
+    
+    .home .content h2 {
+        font-size: 6rem;
+        text-transform: uppercase;
+        color: aquamarine;
+        margin-left: 20px;
+    }
+    
+    .home .content p {
+        width: 60%;
+        font-size: 13px;
+        color: black;
+        font-weight: bolder;
+        margin-left: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(2px);
+    }
